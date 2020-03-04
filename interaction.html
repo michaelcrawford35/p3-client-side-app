@@ -29,11 +29,13 @@
                 <h1>Volume of a Sphere Calculation</h1>
                 Calculation = 4/3&pi;r<sup>3</sup>
                 <form method="POST">
-                    Radius:
-                    <input type="text" name="radius"><br><br>
-                    <input type="submit" name="submit" value="Calculate"><br><br>
-                    Result:
-                    <input type="text" name="result">   
+                    <label for="radius">Radius:</label>
+                    <input type="number" step=1 name="radius" id="radius" placeholder="Enter Radius"><br><br>
+
+                    <button type="button" id="calc">Calculate</button> <br><br>
+
+                    <!-- Kelvin Output (Includes K label and K box (degK)) -->
+                    <div id="result">Result: 0</div>
                 </form>
             </article>
         </main>
@@ -50,10 +52,12 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+
+        <script src="interaction.js"></script>
     </body>
 
     <div class="navbar">
-        Interactive App!
+        P3 Client-Side App
         <a href="index.html" rel="noopener">Home</a>
         <a href="interaction.html" rel="noopener">Interaction</a>
         <a href="contact.html" rel="noopener">Contact</a>
