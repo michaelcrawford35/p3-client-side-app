@@ -7,5 +7,3 @@ QUnit.test('TEST calcVolume', assert => {
   assert.equal(calcVolume(7), 1436.7550402417319, 'Test radius = 7')
   assert.equal(calcVolume(10), 4188.790204786391, 'Test radius = 10')
 })
-
-QUnit.config.autostart = false // sync = false; start after loading html
