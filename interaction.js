@@ -1,4 +1,4 @@
-console.log('INFO: Reading index.js');
+console.log('INFO: Reading interaction.js');
 
 console.log('INFO: Getting access to elements');
 

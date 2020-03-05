@@ -25,7 +25,7 @@
         <nav></nav>
         <hr/>
         <main class="container">
-            <article class="col-sm-8">
+            <article class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
                 <h1>Michael Crawford</h1>
                 <img class="rounded-circle" src="profile.png" id="profile" alt="Profile Picture">
                 <section class="container">
@@ -49,23 +49,12 @@
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/ZN0BjN3wGEU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </section>
             </article>
-            <!-- <aside class="col-sm-4">
-              Media Links - Aside <br>
-              <ul>
-                <li>
-                  <a href="https://github.com/michaelcrawford35" target="_blank" rel="noopener">
-                    <img alt="GitHub" src="github.png"
-                    width="125" height="70" id="github">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/michaelcrawford35/" target="_blank" rel="noopener">
-                    <img alt="LinkedIn" src="linkedin.png"
-                    width="125" height="100" id="linkedin">
-                  </a>
-                </li>
-              </ul>
-            </aside> -->
+            <article class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <section class="container">
+                <button id="getJokeButton" class="btn btn-success">Fetch Joke</button>
+                <p id="jokeresult"></p>
+              </section>
+            </article>
         </main>
         <footer>
             <div id="footer">
@@ -81,6 +70,8 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+
+        <script src="index.js"></script>
     </body>
     <div class="navbar">
       P3 Client-Side App
