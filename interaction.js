@@ -6,6 +6,8 @@ const inputElementRadius = document.getElementById("radius")
 const inputElementResult = document.getElementById("result")
 const btnElement = document.getElementById("calc");
 
+const calcVolume = (radius) => { return (4/3) * Math.PI * (radius * radius * radius);}
+
 console.log('INFO: Configuring event handlers');
 
 btnElement.onclick = async function ()
@@ -14,7 +16,7 @@ btnElement.onclick = async function ()
   const textResult = inputElementResult.value;
   const Radius = parseFloat(textRad);
 
-  const Result = (4/3) * Math.PI * (Radius * Radius * Radius);
+  const Result = calcVolume(Radius);
   inputElementResult.innerHTML = "Result: " + Result;
 }
 
