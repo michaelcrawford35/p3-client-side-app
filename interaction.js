@@ -12,6 +12,7 @@ const calcVolume = () => {
 
   const Result = (4/3) * Math.PI * (Radius * Radius * Radius);
   inputElementResult.innerHTML = "Result: " + Result;
+  return Radius;
 }
 
 const calcVolumeTest = (radius) => {
@@ -21,8 +22,22 @@ const calcVolumeTest = (radius) => {
 
 console.log('INFO: Configuring event handlers');
 
+window.addEventListener('load', (event) => {
+  console.log('  Starting initialization ')
+  if (localStorage.getItem('lastRad'))
+  {
+    inputElementRadius.value = localStorage.getItem('lastRad')
+    console.log(`Stored radius = ${localStorage.lastRad}`)
+  }
+  console.log('Finished initialization')
+})
+
 document.addEventListener('click', event => {
-  if (event.target && event.target.id === 'calc') { calcVolume() }
+  if (event.target && event.target.id === 'calc')
+  {
+    const volRad = calcVolume()
+    localStorage.setItem('lastRad', volRad)
+  }
 })
 
 console.log('INFO: Done loading, waiting for an event'); 
